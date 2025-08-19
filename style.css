@@ -2,13 +2,18 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background-color: rgb(214, 248, 147);
+  background-color: rgb(218, 218, 218);
+  align-items: center;
 }
 
 :root {
   --pretoprincipal: #282828;
   --pretosubtitulo: #3e3e59;
   --pretoprincipal: #5f6980;
+}
+
+.body {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .cabecalho {
@@ -33,26 +38,23 @@
   color: #282828;
   text-align: center;
   font-feature-settings: "liga" off, "clig" off;
-
-  /* Heading/06 */
+  
   font-family: Inter;
   font-size: 28px;
   font-style: normal;
   font-weight: 600;
-  line-height: 34px; /* 121.429% */
+  line-height: 34px;
   letter-spacing: -0.6px;
 }
 .cabecalho_titulo2 {
   color: #282828;
   text-align: center;
   font-feature-settings: "liga" off, "clig" off;
-
-  /* Heading/03 */
   font-family: Inter;
   font-size: 54px;
   font-style: normal;
   font-weight: 600;
-  line-height: 62px; /* 114.815% */
+  line-height: 62px;
   letter-spacing: -1px;
   align-items: stretch;
 }
@@ -61,42 +63,50 @@
   color: #5f6980;
   text-align: center;
   font-feature-settings: "liga" off, "clig" off;
-
-  /* Text/20px/Regular */
   font-family: Inter;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 35px; /* 175% */
+  line-height: 35px;
 }
 .container {
   display: flex;
-  align-items: start;
+  justify-content: center;
+  align-items: center;
   gap: 2rem;
+  padding-top: 25px;
+}
+.div_vazia {
+  margin-bottom: 25px;
 }
 .card {
   width: 16.375rem;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 1rem;
-  padding-bottom: 1rem;
-  border: 2px solid #000000;
-  align-items: center;
+  align-items: self-start;
+  border: 1px solid #5f6980;
 }
 .card img {
-  width: 15.375rem;
-  border-radius: 9px;
-  margin-top: 7px;
-  border: 2px solid #000000;
 }
 .card_descricao {
+  align-items: left;
+  text-align: left;
 }
 .card_titulo {
 }
 .card_funcao {
+  padding: 0.5rem 0;
 }
 .card_texto {
 }
+.card__redes {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
 .card__redes li img {
   width: 1.125rem;
   border: none;
@@ -121,6 +131,7 @@
   .container {
     flex-direction: column;
     align-items: center;
+    display: flex;
   }
   .card_descricao {
   }
